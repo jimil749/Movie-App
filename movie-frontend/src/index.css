@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'montserrat', sans-serif;
+  background-color: #223343;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  height: 70px;
+}
+
+li{
+  float: right;
+}
+
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+header{
+  padding: 50px 15px 0px;
+}
+
+.home {
+  float: left;
+  font-weight: 800;
+  font-size: larger;
+}
+
+header h1{
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 500;
+  text-align: center;
+}
+
+header h2 {
+  color: #FFF;
+  font-size: 36px;
+  font-weight: 300;
+  margin-top: 70px;
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+ main p{
+  /* margin-top: 20px;
+  margin-left: 220px; */
+  color: #FFF;
+  font-size: 25px;
+  font-weight: 300;
+} 
+
+section {
+  padding : 15px;
+}
+
+main h3{
+  color: #FFF;
+  font-size: 36px;
+  font-weight: 300;
+  text-align: center;
+  /* margin-top: 100px; */
+}
+
+label {
+  display: block;
+  color: #FFF;
+  font-size: 20px;  
+  padding : 5px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+input[type = text], input[type = password], input[type = email] {  
+  width: 100%;
+  padding: 9px 20px;
+  margin: 8px 0px;
+  border : 1px solid #4484C4;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: rgb(5, 31, 58);
+  color: #FFF;
+  padding: 14px 20px;
+  border-radius: 5px;
+  border-color: black;
+  cursor: pointer;  
+  margin-top: 30px;
+  margin-left: 50%;
+}
+
+.container_form {
+  padding: 26px;
+
+}
+
+.imgContainer {
+  height: 250px;
+  width: 250px;
+  padding: 20px;
+  margin-left : 325px;
+}
+
+.avatar{
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.boxed {
+  margin-top: 30px;
+  border: 1px solid black;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+
+.react-datepicker__input-container {
+  width: inherit;
+}
+
+.react-datepicker-wrapper {
+  width: 44%;
+}
+
+
+.searchbox {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  
+  border: none;
+  outline: none;
+  background: none;
+  
+  background-color: #EEE;
+  border-radius: 8px;
+  color: #53565A;
+  font-size: 20px;
+  font-weight: 300px;
+
+  transition: 0.4s ease-in-out;
+}
+
+.searchbox:focus {
+  box-shadow: 0px 0px 8px 3px #4484C4;
+}
+
+.search-heading {
+  color: #FFF;
+  text-align: center;
+}
+
+
+.searchResults {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -15px;
+}
+
+.searchResult {
+  width: 33.333%;
+  min-width: 250px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.searchResults .searchResult img {
+  display: block;
+  width: 100%;
+}
+
+.searchResults .searchResult h3 {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  background: #445565;
+  flex: 1 1 100%;
+  transition: 0.4s ease-in-out;
+}
+
+.searchResults .searchResult:hover h3 {
+  background: #FFF;
+  color: #223343;
+}
+
+.images {
+  margin-top: 150px;
+}
+
+.images:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-33 {
+  float: left;
+  width: 33.33%;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;;
+  height: 100vh;
+  background-color: #445565;
+
+  overflow-y: scroll;
+}
+
+.popup .content {
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 25px;
+
+  color: #FFF;
+}
+
+.popup .content .h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.popup .content .h2 span{
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.popup .content .rating {
+  margin-bottom:  30px;
+}
+
+
+.popup .content .plot {
+  display:  flex;
+  flex-wrap: wrap;
+  margin : 0px -15px 30px;
+}
+
+.popup .content .plot img {
+  flex: 1 1 50%;
+  max-width: 300px;
+  padding: 0px 15px;
+}
+
+.popup .content .plot p {
+  flex: 1 1 50%;
+  padding: 15px;
+}
+
+.popup .content .close {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 700;
+
+  background: #448484;
+  color: #FFF;
+  border-radius: 8px;
+  border: none;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+
+  transition: 0.4s ease-out;
+  
+}
+
+.popup .content .close:hover {
+  background: #223343;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 70%;  
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
